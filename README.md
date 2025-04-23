@@ -19,5 +19,16 @@
 
 ##  System Architecture
 
-```text
-[ Frontend (Optional) ] --> [ Spring Boot Backend (Router + API Gateway) ] --> [ FastAPI Microservice ] --> [ DeepSeek Coder (Google Colab) ]
+The architecture follows a modular and service-oriented approach:
+
+![System Architecture](./path/to/d441269a-5f55-4bda-a93e-1e1c159f193e.png)
+
+> **Figure:** End-to-end data flow from User to LLM and back
+
+- **UI**: Accepts code from the user and displays results
+- **Spring Boot Service**: Handles API requests and routes them to the FastAPI microservice
+- **FastAPI Service**: Prepares code and communicates with the Colab-based LLM backend
+- **Colab File**: Hosts the DeepSeek Coder model for live inference
+- **DeepSeek Coder Instruct LLM**: Analyzes code and returns feedback
+
+---
