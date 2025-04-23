@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FFD3A5, #A2D2FF);
+    /* background: linear-gradient(to bottom, #B0E0E6, #D8BFD8); */
+    /* background: linear-gradient(to bottom right, #0078D4, #9b4dff, #ff4b6e); */
+    background-repeat: no-repeat;
+}
+.container{
+    width: 400px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.284);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+option[value="Select"] {
+    color: #aaa;
+    opacity: 0.6;
+}
+label{
+    display: flex;
+    margin-left: 4px;
+    margin-top: 15px;
+}
+textarea {
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+button {
+    width: 50%;
+    border: none;
+    border-radius: 60px;
+    margin-top: 15px;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background: linear-gradient(to bottom right, #0091ff, #d871fa, #fd48a9);
+    /* background: linear-gradient(to bottom right, rgb(117, 211, 248), rgb(255, 173, 186)); */
+    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+    /* background: linear-gradient(to bottom right, #0096FF, #6363f6, #e35be3, #fa5fac, #f82c88); */
+    background-size: 200% 200%;
+    animation: gradientRotate 4s linear infinite;
+}
+@keyframes gradientRotate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.08);
+    transition: 0.4s;
+}
+#error {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
+.success-text {
+    color: green !important;
+    font-weight: bold;
+}
+.error-text {
+    color: red !important;
+    font-weight: bold;
+}
+.checking-text {
+    color: red !important;
+    font-style: italic;
+}

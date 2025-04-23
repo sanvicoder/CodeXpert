@@ -1,2 +1,1 @@
-# CodeXpert
-Code Error Detection System
+# SE-Project
